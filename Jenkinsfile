@@ -1,6 +1,5 @@
 pipeline {
- // agent { label 'linux'}
-  agent { 'any'}
+  agent any
   options {
     skipDefaultCheckout(true)
   }
@@ -32,3 +31,6 @@ pipeline {
     }
   }
 }
+
+
+

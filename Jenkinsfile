@@ -13,8 +13,8 @@ pipeline {
                 properties([
                         parameters([
                                 choice(
-                                        choices: ['pullRequest', 'uatEnv','devEnv', 'stageEnv', 'testEnv','prodEnv'],
-                                        name: 'BuildTypeAndEnv'
+                                        choices: ['pullRequest', 'uatEnv','devEnv', 'stageEnv', 'testEnv','prodEnv']
+                                       // name: 'BuildTypeAndEnv'
                                 ),
                                 string(description: 'TagName(optional for Stage/Dev , mandatory for Test/Preview/Prod) for deployment', name: 'TagName')
                         ])])

@@ -1,7 +1,8 @@
 provider "aws" {
   region = "us-east-1"
   profile = "terraform_user"
-  AWS_SHARED_CREDENTIALS_FILE = "/home/ec2-user/.aws/credentials"
+  shared_config_files = ["~/.aws/config"]
+  shared_credentials_files = ["~/.aws/credentials"] 
 }
 terraform {
   required_providers {

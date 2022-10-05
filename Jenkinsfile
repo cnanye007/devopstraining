@@ -12,7 +12,7 @@ pipeline {
         cleanWs()
       }
     }
-    stage('checkout') {
+    stage('Githubcheckout') {
       steps {
         git branch: 'terraform', credentialsId: 'Github_credentials', url: 'https://github.com/cnanye007/devopstraining.git'
       }

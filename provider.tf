@@ -1,6 +1,6 @@
 provider "aws" {
   region = "us-east-1"
-  profile = "terraform-user"
+  profile = "default"
 }
 terraform {
   required_providers {
